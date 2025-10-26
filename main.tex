@@ -1,0 +1,37 @@
+\documentclass[
+    a4paper,
+    firstfoot=false,			% Set true to include footer on first letter page
+    fromalign=left,
+    fromurl=false,			% Set true to display <my_url> in sender header
+    fromemail=false,			% Set true to display <my_email> in sender header
+    fromphone=false,			% Set true to display <my_phone_no> in sender header
+    fromrule=false			% Set true to display a horizontal ruler dividing sender header from rest 
+]{scrlttr2}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage[ngerman]{babel}		% Uncomment for german locale
+\usepackage[bottom=0cm]{geometry}	% Allows for more content space
+\usepackage{helvet}			% Use Sans-serif font
+\usepackage{lipsum}
+
+\renewcommand{\familydefault}{\sfdefault}	% Override default font
+\frenchspacing
+\sffamily
+\setlength{\parskip}{1em}			% Set distance between paragraphs
+%\LoadLetterOption{DIN}				% Uncoment to use DIN formatted letter used in Germany
+
+\begin{document}
+
+% Fill in your data:
+\setkomavar{fromname}{<my\_name> <my\_surname>}
+\setkomavar{fromaddress}{<my\_street> <my\_building\_no> \\ <my\_zip\_code> <my\_city>}
+\setkomavar{fromemail}{<my\_email>}
+\setkomavar{fromurl}{<my\_url>}
+\setkomavar{fromphone}{<my\_phone\_no>}
+\setkomavar{signature}{<my\_signature>}
+\setkomavar{place}{<my\_place>}
+\setkomavar{date}{\today}
+
+\input{content/\doc}		% Uses the doc variable speciefied as a parameter when running make, defaults to `template`
+
+\end{document}

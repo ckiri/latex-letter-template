@@ -17,15 +17,15 @@ If the `doc` cli parameter isn't specified it defaults to `template` – a simpl
 
 Options and configuration of the document are set inside `main.tex`. To change default behavior, change or uncomment them. The most importend ones IMO:
 
-| Option (default)              | Description                                            |
-|-------------------------------|--------------------------------------------------------|
-| `firstfoot=false`             | Disable footer on first page                           |
-| `fromurl=false`               | Hide `<my_url>` from sender header                     |
-| `fromemail=false`             | Hide `<my_email>` from sender header                   |
-| `fromphone=false`             | Hide `<my_phone_no>` from sender header                |
-| `fromrule=false`              | Hide horizontal ruler dividing sender header from rest |
-| `\usepackage[ngerman]{babel}` | Use german locale                                      |
-| `\LoadLetterOption{DIN}`      | Use DIN formatted letter used in Germany               |
+| Option (default)               | Description                                                          |
+|--------------------------------|----------------------------------------------------------------------|
+| `firstfoot=false`              | Disable footer on first page                                         |
+| `fromurl=false`                | Hide `<my_url>` from sender header                                   |
+| `fromemail=false`              | Hide `<my_email>` from sender header                                 |
+| `fromphone=false`              | Hide `<my_phone_no>` from sender header                              |
+| `fromrule=false`               | Hide horizontal ruler dividing sender header from rest               |
+| `%\usepackage[ngerman]{babel}` | Commented out – uses english locale; Uncomment to use german locale  |
+| `%\LoadLetterOption{DIN}`      | Commented out; uncomment to use DIN letter                           |
 
 ---
 

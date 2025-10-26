@@ -15,7 +15,7 @@ If the `doc` cli parameter isn't specified it defaults to `template` – a simpl
 
 ## Misc
 
-Options and configuration of the document are set inside `main.tex`. To change default behavior, change or uncomment them. The most importend ones IMO:
+Options and configuration of the document are set inside `main.tex`. To change default behavior, change or uncomment them. The most important ones IMO:
 
 | Option (default)               | Description                                                          |
 |--------------------------------|----------------------------------------------------------------------|
@@ -24,7 +24,7 @@ Options and configuration of the document are set inside `main.tex`. To change d
 | `fromemail=false`              | Hide `<my_email>` from sender header                                 |
 | `fromphone=false`              | Hide `<my_phone_no>` from sender header                              |
 | `fromrule=false`               | Hide horizontal ruler dividing sender header from rest               |
-| `%\usepackage[ngerman]{babel}` | Commented out – uses english locale; Uncomment to use german locale  |
+| `%\usepackage[ngerman]{babel}` | Commented out – uses English locale; Uncomment to use German locale  |
 | `%\LoadLetterOption{DIN}`      | Commented out; uncomment to use DIN letter                           |
 
 ---
